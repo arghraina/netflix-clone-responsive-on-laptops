@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-position: center center;         /* Background image will not move and will remain fixed. */
+    background-repeat: none;
+    background-size: max(1200px,100vw);  /* To generate responsiveness on small screens, i am  doing this.*/
+    background-image: url("images/bg.jpg");
+    height: 70vh;
+    width: 100vw;
+}
+
+.main .box{                           /* main ----> .box */
+    height: 70vh;
+    width: 100%;
+    opacity: 0.44;
+    background-color: black;
+    position: absolute;
+    top: 0;
+
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 160vh;
+    height: 80px;
+    margin: auto;
+    justify-content: space-between;
+}
+.main nav span img{
+    width:180px;
+    position: relative;
+    z-index: 10;             /* position:relative and z-index:10 will pop the image out. */
+}
+
+.main nav div button{
+    position: relative;
+    z-index: 10;  
+    width: 100px;
+    height: 5vh;
+}
+
+.heading{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    position: relative;
+    z-index: 10;
+    font-family: "Martel Sans", sans-serif;
+    gap: 23px;
+    padding: 30px;
+}
+.heading .span1{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+.heading> :nth-child(2){          /* > sign is for the immediate first or second or nth child. */
+    font-size: 20px;
+    text-align: center;
+}
+.heading> :nth-child(3){
+    font-size: 20px;
+    text-align: center;
+}
+.heading :nth-child(4) input{
+    height: 8vh;
+    width: 300px;
+    color: white;
+    background-color: #000000bd; 
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.heading .inp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading :nth-child(4) button{
+    height: 9vh;
+    width: 200px;
+    background-color: red; 
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: wheat;
+    margin-left: 4px;
+}
+.separation{
+    height: 5px;
+    background-color: rgb(104, 100, 100);
+}
+
+#btn1{
+    border: 0.1px solid white;
+    border-radius: 6px;
+    background-color: rgba(38, 43, 40, 0.3);            /* rgba does't affect internal text's 
+                                                           color. */
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+#btn2{
+    border: 0.1px solid white;
+    border-radius: 6px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.First{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 70vw;
+    color: white;
+}
+.firstimg{
+    size: 20px;
+}
+img{
+    position: relative;
+    z-index: 10;
+}
+video{
+    position: absolute;
+    size:50px;
+    top: 520px;
+    left: 523px;
+    width: 468px
+}
+.part1{
+    font-size:  60px;
+    font-weight: bolder;
+}
+.parts{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Second{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 90vw;
+    color: white;
+}
+.secondimg{
+    size: 10px;
+}
